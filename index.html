@@ -13,14 +13,28 @@
     <header class="navbar">
         <div class="nav-logo">
             <img src="Mudgl Moto Vlogs Logo-2.png" alt="">
-            <p><b>Gaurav Mudgl</b></p>
+            <p><b>Gaurav Mudgal</b></p>
         </div>
-        <div class="nav-in1">
+        <div class="sidebar">
+            <a onclick=hideSidebar() href="#"><i class="fa fa-times" aria-hidden="true"></i></i></a>
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Qualification</a>
             <a href="">Contact</a>
+        </div>
+        <div class="nav-in1">
+            <!-- <a class="hideonmobile" href="">Home</a>
+            <a class="hideonmobile" href="">About</a>
+            <a class="hideonmobile" href="">Services</a>
+            <a class="hideonmobile" href="">Qualification</a>
+            <a class="hideonmobile" href="">Contact</a> -->
+            <div class="hideonmobile"><a class="hideonmobile" href="">Home</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="">About</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="">Services</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="">Qualification</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="">Contact</a></div>
+            <a class="menubar" onclick=showSidebar() href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </div>
     </header>
     <div class="slider-container">
@@ -331,12 +345,24 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <script>
+
         var typed = new Typed(".auto-type", {
             strings: ["CEO", "YOUTUBER"],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
         })
+
     </script>
 
 </body>

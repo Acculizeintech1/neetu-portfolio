@@ -26,28 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
     updateSlider();
     startSlider();
 });
-// var currentSlideIndex1 = 0;
-// var slides1 = document.querySelectorAll('.about-card');
-// var interval1 = 3000; // Change slide every 3 seconds
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
 
-// function nextSlide1() {
-//     currentSlideIndex1++;
-//     updateSlider1();
-// }
-
-// function updateSlider1() {
-//     if (currentSlideIndex1 >= slides1.length) {
-//         currentSlideIndex1 = 0;
-//     }
-//     var slideWidth = slides1[0].clientWidth;
-//     var offset = -slideWidth * currentSlideIndex1;
-//     document.querySelector('.about-in').style.transform = 'translateX(' + offset + 'px)';
-// }
-
-// function startSlider() {
-//     setInterval(function () {
-//         nextSlide1();
-//     }, interval);
-// }
-
-// startSlider();
+}

@@ -19,11 +19,11 @@ html {
     color: rgba(39, 35, 35, 0.58);
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
     /* backdrop-filter: blur(10px); */
 }
 
@@ -64,18 +64,56 @@ html {
     /* background-color: rgba(255, 255, 255, 0); */
 }
 
+.nav-in1:last-child {
+    align-items: center;
+    right: 0;
+    /* display: none; */
+}
+
+.nav-in1 a:hover {
+    background-color: rgba(11, 82, 56, 0.865);
+}
+
+a.menubar {
+    display: none;
+}
+
 .nav-in1 {
     margin-left: 15%;
     width: 1200px;
     font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-/* .nav-in2 {
-    font-size: 1.5rem;
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    background-color: rgba(7, 7, 7, 0.815);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a {
+    width: 100%;
     padding: 10px;
-    margin-right: .8%;
-    margin-left: 9%;
-} */
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: rgba(11, 82, 56, 0.865);
+}
 
 body,
 html {
@@ -127,9 +165,8 @@ html {
     font-size: 3.4rem;
 }
 
-.sliding-text1 p,
-button,
-div {
+.intro {
+    width: auto;
     /* position: absolute; */
     top: 0%;
     /* Move the text off-screen initially */
@@ -801,9 +838,203 @@ footer {
     margin-right: 40px;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1876px) {
+    .nav-in1 a:last-child {
+        align-items: center;
+        right: 0;
+    }
+
     .navbar {
-        height: 30px;
+        height: 45px;
+    }
+
+    .nav-logo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .nav-logo p {
+        font-size: 2rem;
+    }
+
+    .nav-in1 {
+        margin-left: 0;
+    }
+
+    .nav-in1 a {
+        font-size: 1.4rem;
+    }
+
+    .intro h1 {
+        font-size: 3.2rem;
+    }
+
+    .sliding-text1 p {
+        font-size: 3rem;
+    }
+
+    .social div {
+        height: 85px;
+        width: 85px;
+    }
+
+    .social i {
+        font-size: 2.4rem;
+    }
+
+    .bio-head {
+        margin-top: 20px;
+    }
+
+    .bio-head-up {
+        font-size: 10rem;
+    }
+
+    .bio-head-in {
+        font-size: 3.2rem;
+    }
+
+    .bio-photo img {
+        height: 550px;
+        width: auto;
+    }
+
+    .bio-dis {
+        margin-left: 15px;
+        margin-top: -30px;
+        font-size: 1rem;
+    }
+
+    .my-info {
+        padding-top: 0;
+        margin-top: 0;
+        grid-template-columns: repeat(auto-fill, minmax(227xpx, 1fr));
+    }
+
+    .bio-dis span {
+        font-size: 1.2rem;
+    }
+
+    .follow-social {
+        font-size: 1.6rem;
+    }
+
+    .follow-social i {
+        font-size: 2.2rem;
+    }
+
+    .about {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 70px;
+    }
+
+    .about-head {
+        padding: 45px;
+        font-size: 1.4rem;
+    }
+
+    .about-in {
+        margin-top: -75px;
+    }
+
+    .about-card {
+        font-size: 1.2rem;
+        padding: 15px;
+        height: 225px;
+        width: 23%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border: 10px solid rgb(255 255 255);
+    }
+
+    .ex-head {
+        margin-top: 30px;
+    }
+
+    .ex-head-up {
+        font-size: 8rem;
+    }
+
+    .ex-head-in {
+        font-size: 2.6rem;
+    }
+
+    .timeline {
+        margin-left: 3%;
+    }
+
+    .left-cont {
+        left: -75px;
+    }
+
+
+    .right-cont {
+        width: 38%;
+    }
+
+    .text-box {
+        font-size: 18px;
+    }
+
+    .define {
+        margin-top: 0;
+    }
+
+    .define-sec {
+        padding: 25px;
+        width: 39%;
+    }
+
+    .defineimg img {
+        height: 500px;
+    }
+
+    .you-head-up {
+        font-size: 5rem;
+    }
+
+    .you-head-in {
+        font-size: 2.4rem;
+    }
+
+    footer {
+        margin-top: 5px;
+        height: 400px;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .footer-section {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1106px) {
+    .my-info {
+        grid-template-columns: repeat(auto-fill, minmax(227px, 1fr));
+    }
+
+    .bio {
+        height: 65vh;
+    }
+
+    .follow-social {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav-in1 a:last-child {
+        align-items: center;
+        right: 0;
+    }
+
+    .navbar {
+        height: 45px;
     }
 
     .nav-logo p {
@@ -813,6 +1044,11 @@ footer {
     .nav-in1 a {
         font-size: .9rem;
         padding: 0;
+    }
+
+    .nav-logo img {
+        height: 60px;
+        width: 60px;
     }
 
     .nav-in1 {
@@ -863,9 +1099,20 @@ footer {
         width: 60px;
     }
 
+    .bio-head-up {
+        -webkit-text-stroke: 0.4px rgba(11, 82, 56, 0.865);
+        font-size: 8rem;
+    }
+
+    .bio-head-in {
+        font-size: 2.6rem;
+    }
+
     .bio {
-        height: 1900px;
-        display: block;
+        height: 700px;
+        display: flex;
+        margin-top: 75px;
+        padding: 0px;
     }
 
     .bio-photo {
@@ -874,21 +1121,59 @@ footer {
     width: 287px; */
     }
 
+    .bio-photo img {
+        height: 460px;
+        padding-top: 10px;
+        width: auto;
+        margin-top: 70px;
+        margin-right: 0px;
+    }
+
+    .bio-dis {
+        margin-right: 0px;
+        margin-left: 0px;
+        font-size: 1rem;
+        margin-top: 65px;
+    }
+
+    .bio-dis span {
+        font-size: 1.2rem;
+    }
+
     .my-info {
         display: block;
     }
 
+    .follow-social {
+        font-size: 1.5rem;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .follow-social i {
+        font-size: 2rem;
+        padding: 17px;
+    }
+
+    .ad {
+        height: 100px;
+        margin-top: 0%;
+        margin-bottom: 100px;
+    }
+
     .about {
-        height: 1200px;
+        height: 900px;
 
     }
 
     .about-head {
         font-size: 1.6rem;
+        padding: 25px;
     }
 
     .about-in {
         display: block;
+        margin-top: 0;
     }
 
     .about-card {
@@ -896,18 +1181,79 @@ footer {
         margin-top: 20px;
         width: 50%;
         font-size: 1.2rem;
+        height: 150px;
+    }
+
+    .ex-head {
+        margin-top: 25px;
+    }
+
+    .ex-head-up {
+        -webkit-text-stroke: 0.4px rgba(11, 82, 56, 0.865);
+        font-size: 6rem;
+    }
+
+    .ex-head-in {
+        font-size: 2rem;
+    }
+
+    .timeline {
+        margin: 50px auto;
+        margin-left: 30px;
+    }
+
+    .timeline::after {
+        left: 35px;
+    }
+
+    .experience {
+        width: 60%;
+        padding-left: 150px;
+        padding-right: 25px;
+        padding-top: 30px;
+    }
+
+    .left-cont {
+        left: -15px;
+    }
+
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-cont {
+        left: -15px;
+    }
+
+    .left-cont img,
+    .right-cont img {
+        left: 10px;
+    }
+
+    .left-cont-arrow,
+    .right-cont-arrow {
+        border-right: 15px solid wheat;
+        border-left: 0;
+        left: -15px;
     }
 
     .define {
-        height: 1500px;
+        height: 1250px;
         display: block;
+        margin-top: 100px;
     }
 
     .define-con {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2, .2fr);
+        grid-template-columns: repeat(3, .2fr);
         /* margin-left: 15%; */
+        width: 80%;
+        height: 550px;
     }
 
     .define-sec {
@@ -920,8 +1266,17 @@ footer {
         text-align: center;
     }
 
+    .you-head-up {
+        -webkit-text-stroke: 0.4px rgba(11, 82, 56, 0.865);
+        font-size: 3.8rem;
+    }
+
+    .you-head-in {
+        font-size: 2rem;
+    }
+
     .you-body {
-        height: 1250px;
+        height: 975px;
     }
 
     .you-head {
@@ -941,8 +1296,14 @@ footer {
         margin-bottom: 20px;
     }
 
+    footer {
+        height: 800px;
+        padding: 0%;
+    }
+
     .footer-section {
         font-size: 1rem;
+        height: 200px;
     }
 
     .footer-content {
@@ -957,5 +1318,235 @@ footer {
 
     .footer-section button {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    a.menubar {
+        display: block;
+    }
+
+    .nav-in1 a:last-child {
+        align-items: center;
+        right: 0;
+        font-size: 1rem;
+        margin-top: 10px;
+        /* margin-left: 400px; */
+        margin-inline-start: auto;
+        margin-right: 10px;
+    }
+
+    .navbar {
+        height: 45px;
+    }
+
+    .nav-logo {
+        width: 830px;
+    }
+
+    .nav-logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-logo p {
+        font-size: 1.4rem;
+    }
+
+    .nav-in1 a {
+        font-size: .5rem;
+    }
+
+    .intro {
+        height: 350px;
+        width: 320px;
+    }
+
+    .intro h1 {
+        font-size: 2.4rem;
+    }
+
+    .sliding-text1 p {
+        font-size: 2.4rem;
+    }
+
+    .social div {
+        height: 50px;
+        width: 50px;
+    }
+
+    .social i {
+        font-size: 1.6rem;
+    }
+
+    .bio-head {
+        margin-top: 20px;
+    }
+
+    .bio-head-up {
+        font-size: 4rem;
+    }
+
+    .bio-head-in {
+        font-size: 1.4rem;
+    }
+
+    .bio {
+        display: block;
+        height: 1100px;
+        margin-top: 50px;
+    }
+
+    .bio-photo img {
+        height: 375px;
+        margin-top: 20px;
+    }
+
+    .bio-dis {
+        width: 95%;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .follow-social i {
+        font-size: 1.8rem;
+        padding: 8px;
+    }
+
+    .ad {
+        /* margin-top: px; */
+        height: 0px;
+    }
+
+    .ad-in {
+        margin-top: 15px;
+    }
+
+    .ad-in img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .about {
+        width: 90%;
+        margin-left: 5%;
+        height: 950px;
+    }
+
+    .about-in {
+        /* margin-bottom: 30px; */
+        margin-top: 0;
+    }
+
+    .about-head {
+        font-size: 1.4rem;
+    }
+
+    .about-card {
+        margin-left: 5%;
+        border: 8px solid rgb(255 255 255);
+        width: 72%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-in i {
+        font-size: 1.8rem;
+    }
+
+    .about-card p {
+        padding: 10px;
+    }
+
+    .ex-head-up {
+        font-size: 2.8rem;
+    }
+
+    .ex-head-in {
+        font-size: 1rem;
+    }
+
+    .timeline {
+        margin-left: auto;
+    }
+
+    .timeline::after {
+        left: 18px;
+    }
+
+    .experience {
+        width: 70%;
+        padding-top: 0;
+        padding-left: 110px;
+    }
+
+    .experience img {
+        width: 85px;
+    }
+
+    .define {
+        height: auto;
+    }
+
+    .define-con {
+        grid-template-columns: repeat(2, .2fr);
+        margin-left: 5%;
+        width: 90%;
+        height: auto;
+    }
+
+    .define-sec h1 {
+        font-size: 1.2rem;
+    }
+
+    .define-sec p {
+        font-size: 1rem;
+    }
+
+    .defineimg img {
+        height: 300px;
+        width: auto;
+        margin-top: -25px;
+    }
+
+    .you-head {
+        margin-top: 30px;
+    }
+
+    .you-head-up {
+        font-size: 2.2rem;
+    }
+
+    .you-body {
+        height: 950px;
+        margin-top: -30px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-section {
+        height: 150px;
+        /* font-size: 1rem; */
+    }
+
+    .footer-section li {
+        font-size: .8rem;
+    }
+
+    .footer-bottom {
+        margin-top: 115px;
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
     }
 }
