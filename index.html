@@ -17,23 +17,18 @@
         </div>
         <div class="sidebar">
             <a onclick=hideSidebar() href="#"><i class="fa fa-times" aria-hidden="true"></i></i></a>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Qualification</a>
-            <a href="">Contact</a>
+            <a onclick=hideSidebar() href="#home">Home</a>
+            <a onclick=hideSidebar() href="#aboutme">About</a>
+            <a onclick=hideSidebar() href="#service">Services</a>
+            <a onclick=hideSidebar() href="#exper">Experience</a>
+            <a onclick=hideSidebar() href="#foot">Contact</a>
         </div>
         <div class="nav-in1">
-            <!-- <a class="hideonmobile" href="">Home</a>
-            <a class="hideonmobile" href="">About</a>
-            <a class="hideonmobile" href="">Services</a>
-            <a class="hideonmobile" href="">Qualification</a>
-            <a class="hideonmobile" href="">Contact</a> -->
-            <div class="hideonmobile"><a class="hideonmobile" href="">Home</a></div>
-            <div class="hideonmobile"><a class="hideonmobile" href="">About</a></div>
-            <div class="hideonmobile"><a class="hideonmobile" href="">Services</a></div>
-            <div class="hideonmobile"><a class="hideonmobile" href="">Qualification</a></div>
-            <div class="hideonmobile"><a class="hideonmobile" href="">Contact</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="#home">Home</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="#aboutme">About</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="#service">Services</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="#exper">Experience</a></div>
+            <div class="hideonmobile"><a class="hideonmobile" href="#foot">Contact</a></div>
             <a class="menubar" onclick=showSidebar() href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </div>
     </header>
@@ -45,7 +40,7 @@
             <div class="slide" style="background-image: url('play.jpg');"></div>
         </div>
     </div>
-    <div class="intro">
+    <div class="intro" id="home">
         <b>
             <h1>Hi There,</h1>
             <h1>I'm Gaurav Mudgal</h1>
@@ -68,7 +63,7 @@
             </div>
         </div>
     </div>
-    <div class="bio-head">
+    <div class="bio-head" id="aboutme">
         <h1 class="bio-head-up">ABOUT</h1>
         <h1 class="bio-head-in"> ABOUT ME</h1>
     </div>
@@ -98,21 +93,22 @@
                     <span>Phone:</span>
                     <p><a href="tel:+91 9808965610">+91 980 896 5610</a></p>
                 </div>
-                <ul class="follow-social">
-                    <li>
-                        <h5>Follow Me On:</h5>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/gaurav-mudgal-3a9092145/"><i class="fa fa-linkedin-square"
-                                aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/gauravmudgl007/videos/"><i class="fa fa-facebook-square"
-                                aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.youtube.com/@gauravmudgl"><i class="fa fa-youtube-play"
-                                aria-hidden="true"></i></a></li>
-                    <li><a
-                            href="https://www.instagram.com/gaurav_mudgl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
             </div>
+            <ul class="follow-social">
+                <li>
+                    <h5>Follow Me On:</h5>
+                </li>
+                <li><a href="https://www.linkedin.com/in/gaurav-mudgal-3a9092145/"><i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/gauravmudgl007/videos/"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/@gauravmudgl"><i class="fa fa-youtube-play"
+                            aria-hidden="true"></i></a></li>
+                <li><a
+                        href="https://www.instagram.com/gaurav_mudgl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+
             <hr>
         </div>
     </div>
@@ -123,7 +119,7 @@
             <img src="ex-logo3-removebg-preview.png" alt="">
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="service">
         <div class="about-head">
             <h1>What I Do For You </h1>
         </div>
@@ -131,12 +127,14 @@
             <div class="about-card">
                 <i class="fa fa-desktop" aria-hidden="true"></i>
                 <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia totam delectus dignissimos?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia totam delectus dignissimos?
+                </p>
             </div>
             <div class="about-card">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <h2>App Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime distinctio est natus autem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime distinctio est natus autem!
+                </p>
             </div>
             <div class="about-card">
                 <i class="fa fa-camera-retro" aria-hidden="true"></i>
@@ -145,19 +143,9 @@
 
                 </p>
             </div>
-            <!-- <div class="about-card">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <h2>App Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime distinctio est natus autem!</p>
-            </div>
-            <div class="about-card">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <h2>App Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime distinctio est natus autem!</p>
-            </div> -->
         </div>
     </div>
-    <div class="ex-head">
+    <div class="ex-head" id="exper">
         <h1 class="ex-head-up">EXPERIENCE</h1>
         <h1 class="ex-head-in">EXPERIENCE</h1>
     </div>
@@ -241,6 +229,24 @@
             <img src="banner.png" alt="">
         </div>
     </div>
+    <div class="channel-head">
+        <h1 class="channel-head-up">MY YOUTUBE CHANNELS</h1>
+        <h1 class="channel-head-in">MY YOUTUBE CHANNELS</h1>
+    </div>
+    <div class="channels">
+        <div class="channel-con">
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+            <div class="channel-link"></div>
+        </div>
+    </div>
     <div class="you-head">
         <h1 class="you-head-up">MY YOUTUBE CONTENT</h1>
         <h1 class="you-head-in">MY YOUTUBE CONTENT</h1>
@@ -289,7 +295,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="foot">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section mar">
@@ -324,12 +330,12 @@
                 </div>
                 <div class="footer-section contact-form">
                     <h2>Contact Us</h2>
-                    <form action="#" method="post">
+                    <form action="https://formspree.io/f/meqyrezq" method="post">
                         <input type="email" name="email" class="text-input contact-input"
-                            placeholder="Your email address...">
-                        <textarea rows="4" name="message" class="text-input contact-input"
-                            placeholder="Your message..."></textarea>
-                        <button type="submit" class="btn btn-big contact-btn">
+                            placeholder="Your email address..." required>
+                        <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."
+                            required></textarea>
+                        <button type="submit" value="Send" class="btn btn-big contact-btn">
                             <i class="fas fa-envelope"></i>
                             Send
                         </button>
